@@ -9,4 +9,4 @@
 
 Соот-но чтобы найти второе слагаемое к fisrt будем двигать last к началу.
 
-Если inputData[first] + inputData[last] < check, значит второго слагаемого для start нет (т.к. массив отсортирован) и мы двигаем first к концу, пока first < last.
+Если inputData[first] + inputData[last] < check, значит второго слагаемого для first нет (т.к. массив отсортирован) и мы двигаем first к концу, пока first < last.
