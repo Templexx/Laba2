@@ -13,9 +13,11 @@ namespace laba_2
             Array.Sort(inputData, 0, length);
             int first = 0;
             int last = length - 1;
-            while (first < last) {
+            while (first < last) 
+            {
                 int s = inputData[first] + inputData[last];
-                if (s == check) {
+                if (s == check) 
+                {
                     Console.Write(inputData[first]);
                     Console.Write(", ");
                     Console.Write(inputData[last]);
@@ -23,10 +25,12 @@ namespace laba_2
                     first++;
                     last--;
                 }
-                else if (s < check) {
+                else if (s < check) 
+                {
                     first++;
                 }
-                else {
+                else 
+                {
                     last--;
                 }
             }
