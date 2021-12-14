@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba_2", "laba_2\laba_2.csproj", "{5BCE525C-490D-43F3-8330-0E976712614E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba2", "Laba2\Laba2.csproj", "{5BCE525C-490D-43F3-8330-0E976712614E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
