@@ -1,22 +1,27 @@
 ﻿using System;
 
-namespace laba_2
+namespace Laba2
 {
-    public static class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             // Входные данные (массив, строка или любой подобный тип)
-            var inputData = new int[] { 2, 3, 4, 6, 9, 10, 12, 15, 17, 18, 20, 22, 25 };
-            var check = 24;
+            var inputData = InsertInputData();
+            var check = InsertCheck();
             var length = inputData.Length;
             Array.Sort(inputData, 0, length);
             var first = 0;
             var last = length - 1;
-            while (first < last) 
+            FaindPairs(first, last, inputData, check);
+        }
+
+        private static void FaindPairs(int first, int last, int[] inputData, int check)
+        {
+            while (first < last)
             {
                 var s = inputData[first] + inputData[last];
-                if (s == check) 
+                if (s == check)
                 {
                     Console.Write(inputData[first]);
                     Console.Write(", ");
@@ -25,15 +30,27 @@ namespace laba_2
                     first++;
                     last--;
                 }
-                else if (s < check) 
+                else if (s < check)
                 {
                     first++;
                 }
-                else 
+                else
                 {
                     last--;
                 }
             }
+        }
+
+        private static int InsertCheck()
+        {
+            var check = 24;
+            return check;
+        }
+
+        private static int[] InsertInputData()
+        {
+            var inputData = new[] {2, 3, 4, 6, 9, 10, 12, 15, 17, 18, 20, 22, 25};
+            return inputData;
         }
     }
 }
